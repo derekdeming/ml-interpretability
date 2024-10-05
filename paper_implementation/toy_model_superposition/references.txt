@@ -1,0 +1,5 @@
+this notebook is built on top of the anthropics github repo.
+
+I am trying to understand the code released by the team at Anthropic as well as expand for my own research purposes in different directions to better understand the concept of toy models of superposition as described in the paper: https://transformer-circuits.pub/2022/toy_model/index.html#motivation
+
+github repo: https://github.com/anthropics/toy-models-of-superposition/blob/main/toy_models.ipynb 

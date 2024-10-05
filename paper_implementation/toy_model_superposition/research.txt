@@ -1,0 +1,28 @@
+research question:
+- Does superposition contribute to vulnerability to adversarial examples in neural networks?
+
+hypothesis:
+- Models utilizing superposition (i.e., representing more features than neurons via overlapping representations) are more susceptible to adversarial attacks compared to models without superposition.
+
+
+experimentation design : 
+1. compare models trained with superposition and without superposition and eval on adversarial examples
+
+- models : 
+1. with superposition: 
+        models where the num of features is greater than the num of neurons, forcing the model to use superposition to represent features
+2. without superposition: 
+        models where the num of features is less than the num of neurons, so each neuron can only represent one feature which should avoid superpositioning 
+
+
+datasets: 
+    - synthetic data controlling for feature sparsity and importance 
+    - both models trained on same data
+
+- adversarial attacks: 
+    - generated using fast gradient sign method (FGSM)
+    - projected gradient descent (PGD)
+
+- evaluation metrics: 
+    - robustness = drop in accuracy or increase in loss when eval on adversarial examples
+    - superposition indication = measure of "interference" or polysemanticity in the model's predictions when eval on adversarial examples

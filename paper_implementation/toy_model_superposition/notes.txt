@@ -3,3 +3,53 @@ main actions in this paper was to take small ReLU networks trained on synthetic 
 they also wanted to show that superposition can occur in small "traditional" ML systems emulating that behavior may occur in larger systems 
 
 superposition: when models represent more features than they have dimensions -- when features are sparse, superposition allows compression beyond what a linear model can do, at the cost of "interference" that requires non-linear methods to resolve
+
+
+Open-Ended Questions and Research Directions:
+
+- Understanding Superposition in Larger Models:
+Question: How prevalent is superposition in real-world neural networks like large language models or convolutional networks?
+Research Direction: Analyze pre-trained models to detect signs of superposition. Use techniques like probing classifiers or interpretability tools to identify polysemantic neurons.
+
+
+- Effects of Superposition on Adversarial Robustness:
+Question: Does superposition contribute to vulnerability to adversarial examples?
+Research Direction: Experiment with models trained with and without superposition to see how they respond to adversarial attacks. Investigate if reducing superposition improves robustness.
+
+
+- Manipulating Superposition Through Regularization:
+Question: Can we control the degree of superposition using regularization techniques?
+Research Direction: Apply L1 or L2 regularization on activations or weights to encourage or discourage superposition. Observe the impact on model performance and feature representation.
+
+
+- Superposition and Feature Importance:
+Question: How does the importance of features affect their representation in superposition?
+Research Direction: Systematically vary feature importance and study how models decide which features to represent individually versus in superposition.
+
+
+- Non-Uniform Superposition and Correlated Features:
+Question: How does feature correlation influence superposition?
+Research Direction: Create datasets with correlated or anti-correlated features. Investigate how models handle such features in superposition and the resulting geometric arrangements.
+
+
+- Computational Capacity in Superposition:
+Question: Can neural networks perform complex computations while using superposition?
+Research Direction: Design experiments where the model needs to compute functions (like parity or more complex logical functions) on inputs represented in superposition. Analyze the limitations.
+
+
+
+- Phase Transitions and Learning Dynamics:
+Question: What are the dynamics of models as they transition between phases of superposition?
+Research Direction: Monitor training dynamics to detect when phase changes occur. Use this to understand how models learn to balance feature representation and interference.
+
+
+
+- Applications to Model Compression:
+Question: Can understanding superposition lead to better model compression techniques?
+Research Direction: Explore if models can be intentionally trained to maximize superposition to reduce model size without significantly sacrificing performance.
+
+
+
+- Developing Methods to 'Unfold' Superposition:
+Question: Is it possible to recover individual features from superposed representations?
+Research Direction: Investigate algorithms from compressed sensing or sparse coding to decompose superposed activations back into individual features.

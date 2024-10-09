@@ -2,4 +2,15 @@ this notebook is built on top of the anthropics github repo.
 
 I am trying to understand the code released by the team at Anthropic as well as expand for my own research purposes in different directions to better understand the concept of toy models of superposition as described in the paper: https://transformer-circuits.pub/2022/toy_model/index.html#motivation
 
-github repo: https://github.com/anthropics/toy-models-of-superposition/blob/main/toy_models.ipynb 
+github repo: https://github.com/anthropics/toy-models-of-superposition/blob/main/toy_models.ipynb
+
+decomposability: Network representations can be described in terms of independently understandable features which allows us to reason about the model without fitting the whole thing in our heads
+
+linearity : features are representing by direction -- in a linear representation, this corresponds to determining which directions in activation space correspond to which independent features of the input.
+
+superposition: Linear representations can represent more features than dimensions, using a strategy we call superposition. This can be seen as neural networks simulating larger networks. This pushes features away from corresponding to neurons.
+
+features can be considered the following:
+1. features as arbitrary functions
+2. features as interpretable properties
+3. neurons in sig. large models
